@@ -10,6 +10,10 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: '/form.vue/', 
+  build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
